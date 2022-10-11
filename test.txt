@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<body>
+
 <head>
  <title>Hello!</title>
  <style>
@@ -8,3 +12,7 @@
  }
  </style>
 </head>
+
+</body>
+</html>
+
