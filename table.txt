@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang=”en”>
+<body>
 
 
 <style>
@@ -22,3 +23,6 @@ table, th, td {
     <td>6</td>
   </tr>
 </table>
+</body>
+</html>
+
