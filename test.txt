@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<body>
+
 <table>
 <tr>
    <td>Cell 1</td>
