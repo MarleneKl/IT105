@@ -2,21 +2,24 @@
 <html>
 <body>
 
-<head>
- <title>Hello!</title>
- <style>
- .title
- {
- text-align: center;
- color: blue;
- }
- </style>
-</head>
-<h1 class=”title”>Hello, world!</h1>
-<h2 class=”title”> Sec 1</h2>
-<p>Some text.</p>
-<h2 class=”title”> Sec 2</h2>
-<p>Some more text.</p>
+<body>
+<table>
+<tr>
+   <td>Cell 1</td>
+   <td>Cell 2</td>
+   <td>Cell 3</td>
+</tr>
+<tr>
+   <td>Cell 4</td>
+   <td>Cell 5</td>
+   <td>Cell 6</td>
+</tr>
+<tr>
+   <td>Cell 7</td>
+   <td>Cell 8</td>
+   <td>Cell 9</td>
+</tr>
+</table>
 
 </body>
 </html>
