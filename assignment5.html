@@ -1,53 +1,103 @@
-<!-- Marlene Klecker, 9/19/2022, Assignment 03 -->
+<!-- Marlene Klecker, 10/11/2022, assignment 4 -->
 <!DOCTYPE html>
-<html lang="en">
-<html>
+<html lang=”en”>
+<title> Marlene's Veggie Pizza Palace</title>
+
+<img src="Pizza.jpg" alt="Pizza" width="500" height="333">
+
+
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
 <body>
 
-<p>
-<a href="#bottom">Click here to go to Bottom.</a>
-</p>
+
+<h2>Marlene's Veggie Pizza Palace</h2>
+
+<table style="width:19%">
+  <tr>
+    <td>First Name</td>
+    <td><input type=text name"first name"></td>
+  <tr>
+    <td>Last Name</td>
+    <td><input type=text name"last name"></td>
+  </tr>
+  <tr>
+    <td>Phone Number</td>
+    <td><input type=text name"phone number"></td>
+  </tr>
+  <tr>
+    <td>Street Address</td>
+    <td><input type=text name"street address"></td>
+  </tr>
+</table>
+
+<br>
+
+<h2>Pizza Size</h2>
+<label for=”size”>
+<SELECT NAME="choices" id=”size” SIZE=3>
+ <option>Small</option>
+ <option>Medium</option>
+ <option>Large</option>
+ <option>Extra Large</option>
+</SELECT>
+
+<br><br>
+
+<h2>Crust Style</h2>
+    <INPUT TYPE=RADIO NAME="Crust Style" VALUE="New York"> New York
+    <INPUT TYPE=RADIO NAME="Crust Style" VALUE="Chicago"> Chicago
+    <INPUT TYPE=RADIO NAME="Crust Style" VALUE="Greek"> Greek
+    <INPUT TYPE=RADIO NAME="Crust Style" VALUE="Napolitan"> Napolitan
+    <INPUT TYPE=RADIO NAME="Crust Style" VALUE="Sicilian"> Sicilian
+
+<br><br>
 
 
-<h2>Dolphins </h2>
-        
-<p>
-<i>Dolphins are aquatic mammals belonging to the Infraorder Cetacea.
-They are highly intelligent creatures who can learn individually and pass on new information to others. 
-They are capable of complex problem solving and social interaction. Although dolphins live in water, they are not fish. 
-They breathe through a blowhole on the top of their head, give birth to their young ones, feed them milk and have body hair. 
-Thus, they are classified as marine mammals.</i> 
-</p>
+<h2>Toppings</h2>
+<input type=CHECKBOX Name="Feta"> Feta
+<br>
+<input type=CHECKBOX Name="Extra Cheese"> Extra Cheese
+<br>
+<input type=CHECKBOX Name="Spinach"> Spinach
+<br>
+<input type=CHECKBOX Name="Chilli"> Chilli
+<br>
+<input type=CHECKBOX Name="Onions"> Onions
+<br>
+<input type=CHECKBOX Name="Broccoli"> Broccoli
+<br>
+<input type=CHECKBOX Name="Zucchini"> Zucchini
+<br>
+<input type=CHECKBOX Name="Smoked Paprika"> Smoked Paprika 
+<br>
+<input type=CHECKBOX Name="Pineapple"> Pineapple 
 
-<h2>More information about dolphins</h2>
 
-<p>
-<b>There are over 40 species of dolphins.</b>
-Some of the most well-known ones include orca, Amazon river dolphins, bottlenose dolphins and South Asian river dolphins.
-While some species grow up to 5 feet, others can be as large as 30 feet.
-Their life span also varies depending on their species.
-</p> 
+<br><br>
+<form>
+<h2>Delivery Options</h2>
+    <INPUT TYPE=RADIO NAME="Delivery Opitions" VALUE=""> Delivery
+    <INPUT TYPE=RADIO NAME="Delivery Options" VALUE="Chicago"> Pickup
+    <INPUT TYPE=RADIO NAME="Delivery Options" VALUE="Greek"> Drive-In
 
-<h2> More information about dolphins</h2>
+<BR>
+Text area for comments: <BR>
+<TEXTAREA NAME="comments" ROWS=5 COLS=40>
+Enter any special directions. :)
+</TEXTAREA>
+<br>
 
-<p>
-Dolphins are social animals and live as well as hunt in groups.
-They are carnivorous and eat fishes, squids and other small animals.
-<u>They use sonar to find prey, surround and trap them and then take turns to swim to the centre to feed.<u>
-Dolphins are very playful, great at teamwork and can be trained easily.
-They are friendly sea creatures who have often helped people in dangerous situations at sea.
-Hence, they are loved and adored by many.  
-</p> 
+<input type=button value="Submit Order">
+<input type=button value="Reset"><br>
+</form>
 
-<a href="https://defenders.org/wildlife/dolphins">Link to Defenders of Wildlife</a>
 
-<p>
-<a href="https://simple.wikipedia.org/wiki/Dolphin">Link to Wiki</a>
-</p>
 
-<p>
-<a name="bottom"> Here we are</a> 
-</p>
 
 </body>
-</html>
+</html> 
