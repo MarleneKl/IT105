@@ -7,12 +7,12 @@
   <script>
   
 
-  
-
-
           function glue()
          {
-          document.querySelector("#id01").innerHTML = "I love Chicago";
+          document.querySelector("#id01").innerHTML = 
+          "I love "+
+          document.querySelector("#first").value;
+          
            document.querySelector("#full").value = 
                document.querySelector("#first").value
              + " "
