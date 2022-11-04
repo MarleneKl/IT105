@@ -7,10 +7,10 @@
   <script>
          function glue()
          {
-           document.querySelector("#favoriteteam").value = 
-               document.querySelector("#city").value
+           document.querySelector("#full").value = 
+               document.querySelector("#first").value
              + " "
-             + document.querySelector("#team").value
+             + document.querySelector("#last").value
          }
       </script>
  </head>
@@ -19,10 +19,10 @@
 <h1> Welcome to the page ! </h1>
 <br>
 <form name=inclass>
-        City: &emsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type=text id="city"><br>
-        Mascot: &emsp; &emsp; &nbsp; <input type=text id="team" 
+        City: &emsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type=text id="first"><br>
+        Mascot: &emsp; &emsp; &nbsp; <input type=text id="last" 
                           onchange="glue();"><br>
-        Favorite Team: &nbsp;<input type=text id="favoriteteam">
+        Favorite Team: &nbsp;<input type=text id="full">
         
         <br>
         <input type=reset value="clear entries">
