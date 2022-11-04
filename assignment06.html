@@ -4,10 +4,27 @@
 
  <head>
  <title>Assignment 06</title>
+  <script>
+         function glue()
+         {
+           document.querySelector("#full").value = 
+               document.querySelector("#first").value
+             + " "
+             + document.querySelector("#last").value
+         }
+      </script>
  </head>
 
  <body>
-<h1> Welcome to the page </h1>
+<h1> Welcome to the page ! </h1>
+<br>
+<form name=inclass>
+        City: <input type=text id="city"><br>
+        Mascot:  <input type=text id="team" 
+                          onchange="glue();"><br>
+        Favorite Team:  <input type=text id="favoriteteam"><br>
+        <input type=reset value="clear entries">
+      </form>
 </body>
 
 </html>
