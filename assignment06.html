@@ -5,12 +5,16 @@
  <head>
  <title>Assignment 06</title>
   <script>
-         function glue()
+          function glue()
          {
            document.querySelector("#full").value = 
                document.querySelector("#first").value
              + " "
              + document.querySelector("#last").value
+         }
+          function choice()
+         {
+           alert("good choice");
          }
       </script>
  </head>
@@ -25,6 +29,13 @@
         Favorite Team: &nbsp;<input type=text id="full">
         
         <br>
+
+
+        <input type=checkbox>Animal<br>
+        <input type=checkbox>Vegetable<br>
+        <input type=checkbox>Mineral<br>
+        <input type=checkbox onclick="choice();">Fire<br>
+      </form>
         <input type=reset value="clear entries">
       </form>
 </body>
