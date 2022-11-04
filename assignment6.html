@@ -6,19 +6,17 @@
  <title>Assignment 06</title>
   <script>
   
-
-  
-
-
           function glue()
          {
-          document.querySelector("#id01").innerHTML = "I love Chicago";
+          document.querySelector("#id01").innerHTML = 
+          "I love "+
+          document.querySelector("#first").value;
+          
            document.querySelector("#full").value = 
                document.querySelector("#first").value
              + " "
              + document.querySelector("#last").value
-            
-            
+              
          }
           function choice()
          {
@@ -31,7 +29,7 @@
 
  <body>
  <form name=inclass>
-<h1 id="id01"> Welcome to this page</h1>
+<h1 id="id01"> Welcome to the page!</h1>
 <br>
 
         City: &emsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type=text id="first">
