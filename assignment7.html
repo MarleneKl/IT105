@@ -1,53 +1,30 @@
-<!-- Marlene Klecker, 11/04/2022, assignment 6 -->
+<!-- Marlene Klecker, 11/10/2022, assignment 6 -->
 <!DOCTYPE html>
 <html lang=”en”>
 
  <head>
- <title>Assignment 06</title>
+ <title>Assignment 07</title>
+
   <script>
-  
-          function glue()
-         {
-          document.querySelector("#id01").innerHTML = 
-          "I love "+
-          document.querySelector("#first").value;
-          
-           document.querySelector("#full").value = 
-               document.querySelector("#first").value
-             + " "
-             + document.querySelector("#last").value
-              
-         }
-          function choice()
-         {
-           alert("good choice");
-         }
-          
+   var bgToggle=true;
+        function makeRed()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="red";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
          
       </script>
  </head>
 
  <body>
  <form name=inclass>
-<h1 id="id01"> Welcome to the page!</h1>
-<br>
+<h1> Choose a background color!</h1>
 
-        City: &emsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type=text id="first">
-        <br>
-        Mascot: &emsp; &emsp; &nbsp; <input type=text id="last" 
-                          onchange="glue();"><br>
-        Favorite Team: &nbsp;<input type=text id="full">
-        
-        <br><br>
-
-        <input type=checkbox>Wind<br>
-        <input type=checkbox>Rain<br>
-        <input type=checkbox>Sleet<br>
-        <input type=checkbox onclick="choice();">Snow<br>
-     
-        <br>
-        <input type=reset value="clear entries">
-      </form>
+<input type=button value="Red" onclick="makeRed();">
+ </form>
 
 
 </body>
