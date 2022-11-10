@@ -40,6 +40,13 @@
              bgToggle=true;
          }
         }
+
+function add()
+        {
+          document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         + parseFloat(document.querySelector("#second").value); 
+        }
       </script>
  </head>
 
@@ -54,7 +61,14 @@
 <br><br>
 
 <h2>Juniata Calculator</h2>
+<input type=text id="first">
+        <input type=button value="Addtion, +" onclick="add();">
+        <input type=text id="second"> &nbsp; &nbsp; &nbsp; = &nbsp; &nbsp; &nbsp;
+        <input type=text id="full"><br>
 
+
+<br>
+<input type=reset value="clear entries">
  </form>
 
 
