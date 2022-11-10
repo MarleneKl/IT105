@@ -44,8 +44,9 @@
         function doSum()
         {
            var sum=0;
-           var N = parseInt( document.querySelector("#N").value );
-           for (i=1; i<=N; i++) {
+           var N = parseInt( document.querySelector("#N").value )
+           var M = parseInt( document.querySelector("#M").value );
+           for (i=N; i<=M; i++) {
              sum += i;
            }
            document.querySelector("#sumHere").innerHTML = "The sum is "+sum;
@@ -105,7 +106,7 @@ function div()
 <h2>Summation! You decide where it starts an where it ends</h2>
 
         Where would you like to start the summation? <input type=text id="N"><br>
-        Where would you like to end the summation? <input type=text id="N"><br>
+        Where would you like to end the summation? <input type=text id="M"><br>
         <input type=button value="Lets Go!" onclick="doSum();">
         <div id="sumHere">
          Here's for that range. 
