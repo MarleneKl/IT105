@@ -40,6 +40,18 @@
              bgToggle=true;
          }
         }
+        
+        function doSum()
+        {
+           var sum=0;
+           var N = parseInt( document.querySelector("#N").value );
+           for (i=1; i<=N; i++) {
+             sum += i;
+           }
+           document.querySelector("#sumHere").innerHTML = "Here's for that range."+sum;
+        }
+        
+        
 
 function add()
         {
@@ -88,11 +100,18 @@ function div()
         <input type=button value="*" onclick="mul();">
         <input type=button value="/" onclick="div();">
         <input type=text id="second"> &nbsp; &nbsp; &nbsp; = &nbsp; &nbsp; &nbsp;
-        <input type=text id="full"><br>
+        <input type=text id="full"><br><br>
 
+<h2>Summation! You decide where it starts an where it ends</h2>
 
-<h2>Summation! YOu decide where it starts an where it ends</h2>
-<input type=reset value="clear entries">
+        Where would you like to start the summation? <input type=text id="N"><br>
+        Where would you like to end the summation? <input type=text id="N"><br>
+        <input type=button value="Lets Go!" onclick="doSum();">
+        <div id="sumHere">
+         Here's for that range. 
+        </div>
+<br>
+<input type=reset value="Clear entries">
  </form>
 
 
