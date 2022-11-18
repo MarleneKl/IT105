@@ -1,0 +1,119 @@
+<!-- Marlene Klecker, 11/10/2022, assignment 7 -->
+<!DOCTYPE html>
+<html lang=”en”>
+
+ <head>
+ <title>Assignment 07</title>
+
+  <script>
+
+   var bgToggle=true;
+        function makeRed()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="red";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+         }
+        }
+        
+        function makeGreen()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="green";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+         }
+        }
+        
+        function makeBlue()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="blue";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+         }
+        }
+        
+        function doSum()
+        {
+           var sum=0;
+           var N = parseInt( document.querySelector("#N").value )
+           var M = parseInt( document.querySelector("#M").value );
+           for (i=N; i<=M; i++) {
+             sum += i;
+           }
+           document.querySelector("#sumHere").innerHTML = "The sum is "+sum;
+        }
+        
+        
+
+function add()
+        {
+          document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         + parseFloat(document.querySelector("#second").value); 
+        }
+        
+function sub()
+        {
+          document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         - parseFloat(document.querySelector("#second").value); 
+        }
+
+function mul()
+        {
+          document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         * parseFloat(document.querySelector("#second").value); 
+        }
+
+function div()
+        {
+          document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         / parseFloat(document.querySelector("#second").value); 
+        }
+      </script>
+ </head>
+
+ <body>
+ <form name=inclass>
+<h2> Choose a background color!</h2>
+
+<input type=button value="Make it red!" onclick="makeRed();">
+<input type=button value="Make it green!" onclick="makeGreen();">
+<input type=button value="Make it green!" onclick="makeBlue();">
+
+<br><br>
+
+<h2>Juniata Calculator</h2>
+<input type=text id="first">
+        <input type=button value="+" onclick="add();">
+        <input type=button value="-" onclick="sub();">
+        <input type=button value="*" onclick="mul();">
+        <input type=button value="/" onclick="div();">
+        <input type=text id="second"> &nbsp; &nbsp; &nbsp; = &nbsp; &nbsp; &nbsp;
+        <input type=text id="full"><br><br>
+
+<h2>Summation! You decide where it starts an where it ends</h2>
+
+        Where would you like to start the summation? <input type=text id="N"><br>
+        Where would you like to end the summation? <input type=text id="M"><br>
+        <input type=button value="Lets Go!" onclick="doSum();">
+        <div id="sumHere">
+         Here's for that range. 
+        </div>
+<br>
+<input type=reset value="Clear entries">
+ </form>
+
+
+</body>
