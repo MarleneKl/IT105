@@ -22,6 +22,18 @@ function choice()
 {
   alert ("good choice");
   }
+  
+function glue()
+         {
+           document.querySelector("#full").value = 
+               document.querySelector("#first").value
+             + " "
+             + document.querySelector("#last").value
+         }
+function hey()
+         {
+           document.querySelector("#changeText").innerHTML = "Hi "+ document.querySelector("#first").value;
+         }
 </script>
  </head>
 
@@ -37,16 +49,19 @@ We assure the best experience with high quality service by training our therapis
 <table style="width:19%">
   <tr>
     <td>First Name</td>
-    <td><input type=text name"first name"></td>
+    <td><input type=text id="#first" onchange="hey();"></td>
   <tr>
     <td>Last Name</td>
-    <td><input type=text name"last name"></td>
+    <td><input type=text id="#last"></td>
   </tr>
   <tr>
-    <td>Phone Number</td>
-    <td><input type=text name"phone number"></td>
+    <td>Full Name</td>
+    <td><input type=text id=#full"></td>
   </tr>
 </table>
+<div id=changeText>
+      Here is some text.
+      </div>
 
 <br>
 
