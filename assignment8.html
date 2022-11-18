@@ -37,6 +37,19 @@ function hey()
          {
            document.querySelector("#changeText").innerHTML = "Hi "+ document.querySelector("#first").value;
          }
+         
+function people()
+{
+ if (document.querySelector("#people").value =="1" || 
+     document.querySelector("#people").value =="2")
+     document.querySelector("#people").value =="3")
+     document.querySelector("#people").value =="4")
+     document.querySelector("#people").value =="5")
+     document.querySelector("#people").value =="6"){
+           } else {
+             alert("More than 6 people are not able to stay in a villa.");
+           }
+        }
 </script>
  </head>
 
@@ -75,7 +88,10 @@ We assure the best experience with high quality service by training our therapis
  <option>Magatama Villa</option>
  <option>Weda Cita Resort and Spa</option>
  <option>Juli House</option>
-</SELECT>
+</SELECT> <br>
+
+<h4 class="header">Select number of people</h4>
+ <input type=text id=course onchange="people();">
 
 <br>
 
