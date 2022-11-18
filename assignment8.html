@@ -16,6 +16,13 @@ body {
 font-family: Arial Black;
 }
 </style>
+
+<script>
+function choice()
+{
+  alert ("good choice");
+  }
+</script>
  </head>
 
  <body>
@@ -62,12 +69,13 @@ We assure the best experience with high quality service by training our therapis
     <INPUT TYPE=RADIO NAME="Children" VALUE="4"> 4
 
 <br>
-<h4 class="header">Extra Services</h4>
+<h4 class="header">Select Extra Services</h4>
 <input type=CHECKBOX Name="Daily Housekeeping"> Daily Housekeeping
 <br>
 <input type=CHECKBOX Name="Airport Shuttle"> Airport Shuttle
 <br>
-<input type=CHECKBOX Name="Spa"> Spa
+<input type=CHECKBOX
+  onclick="choice();">Spa 
 
 
 <br><br>
@@ -79,7 +87,7 @@ Enter any special directions. :)
 
 
 <br><br>
-
+<input type=submit value="Submit">
 <input type=reset value="Clear entries">
  </form>
 
