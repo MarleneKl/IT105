@@ -33,11 +33,15 @@ function glue()
              + document.querySelector("#last").value
          }
 
-function hey()
-         {
-           document.querySelector("#changeText").innerHTML = "Hi "+ document.querySelector("#first").value;
-         }
-         
+function myFunction() {
+  var txt;
+  if (confirm("Are you sure you want to confirm this booking")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
 </script>
  </head>
 
@@ -115,7 +119,7 @@ Enter any special directions. :)
 
 
 <br><br>
-<input type=submit value="Submit">
+<input type=submit onclick="myFunction()>Are you sure you want to confirm this booking?
 <input type=reset value="Clear entries">
 
 
