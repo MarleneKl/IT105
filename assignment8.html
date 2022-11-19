@@ -38,19 +38,6 @@ function hey()
            document.querySelector("#changeText").innerHTML = "Hi "+ document.querySelector("#first").value;
          }
          
-function numberofpeople()
-{
- if (document.querySelector("#people").value =="1"  || 
-     document.querySelector("#people").value =="2") || 
-     document.querySelector("#people").value =="3") || 
-     document.querySelector("#people").value =="4") || 
-     document.querySelector("#people").value =="5") || 
-     document.querySelector("#people").value =="6"){
-     alert("Hey, great choice!");
-           } else {
-             alert("More than 6 people are not able to stay in a villa.");
-           }
-        }
 </script>
  </head>
 
@@ -91,8 +78,12 @@ We assure the best experience with high quality service by training our therapis
  <option>Juli House</option>
 </SELECT> <br>
 
-<h4 class="header">Select number of people</h4>
- <input type=text id=people onchange="numberofpeople();">
+<h4 class="header">Select number of adults</h4>
+<INPUT TYPE=RADIO NAME="Children" VALUE="0"> 0
+    <INPUT TYPE=RADIO NAME="Adults" VALUE="1"> 1
+    <INPUT TYPE=RADIO NAME="Adults" VALUE="2"> 2
+    <INPUT TYPE=RADIO NAME="Adults" VALUE="3"> 3
+    <INPUT TYPE=RADIO NAME="Adults" VALUE="4"> 4
 
 <br>
 
