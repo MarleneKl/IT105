@@ -34,7 +34,8 @@ function glue()
          }
 function hey()
          {
-           document.querySelector("#changeText").innerHTML = "Welcome  "+
+           document.querySelector("#changeText").innerHTML = 
+           "Welcome  "+
            document.querySelector("#first").value;
          }
 
@@ -64,7 +65,7 @@ function myFunction() {
 <table style="width:18%">
   <tr>
     <td>First Name</td>
-    <td><input type=text id="first" onchange="Welcome ();"></td>
+    <td><input type=text id="first" onchange="Welcome();"></td>
   <tr>
     <td>Last Name</td>
     <td><input type=text id="last"></td>
@@ -75,7 +76,7 @@ function myFunction() {
   </tr>
 </table>
 <div id=changeText>
- jjj
+ Welcome!
 </div>
 
 <br>
